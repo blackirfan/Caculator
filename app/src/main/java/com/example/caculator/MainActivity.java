@@ -40,6 +40,25 @@ Button plus, minus, multiply, divide;
             }
         });
 
+        //multiply
+        multiply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent multiply = new Intent(MainActivity.this,multiplyActivity.class);
+                startActivity(multiply);
+            }
+
+
+        });
+        //divide
+        divide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent divide = new Intent(MainActivity.this,divideActivity.class);
+                startActivity(divide);
+            }
+        });
+
 
     }
 }
